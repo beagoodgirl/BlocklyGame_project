@@ -222,9 +222,9 @@ BlocklyCode.FailCode = function() {
     linesText.appendChild(document.createTextNode(locMsg));
   }
 
-  // const ok = BlocklyGames.getElementById('doneOk');
-  // ok.addEventListener('click', BlocklyInterface.reLoad, true);
-  // ok.addEventListener('touchend', BlocklyInterface.reLoad, true);
+  const ok = BlocklyGames.getElementById('doneOk');
+  ok.addEventListener('click', BlocklyInterface.reLoad, true);
+  ok.addEventListener('touchend', BlocklyInterface.reLoad, true);
 
   BlocklyDialogs.showDialog(content, null, false, true, style,
       function() {

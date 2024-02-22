@@ -27,7 +27,6 @@ Maze.html.start = function(ij) {
 ${BlocklyGames.html.headerBar(ij, BlocklyGames.getMsg('Games.maze', true),
     BlocklyInterface.nextLevelParam, true, false,
     '<button id="pegmanButton"><img src="common/1x1.gif"><span id="pegmanButtonArrow"></span></button>')}
-
 <div id="visualization">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="svgMaze" width="400px" height="400px">
     <g id="look">
@@ -40,7 +39,6 @@ ${BlocklyGames.html.headerBar(ij, BlocklyGames.getMsg('Games.maze', true),
     <div id="capacity"></div>
   </div>
 </div>
-
 <table width=400>
   <tr>
     <td style="width: 190px; text-align: center; vertical-align: top;">
@@ -56,6 +54,7 @@ ${BlocklyGames.html.headerBar(ij, BlocklyGames.getMsg('Games.maze', true),
 </table>
 
 ${Maze.html.toolbox_(ij.level)}
+<div id="gpt"><p>hi</p></div>
 <div id="blockly"></div>
 
 <div id="pegmanMenu"></div>

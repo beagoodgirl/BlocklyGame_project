@@ -1,3 +1,11 @@
+#gpt {
+  position: fixed;
+  top: 61px;
+  left: 420px;
+  height: 90px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 #blockly {
   position: fixed;
   bottom: 10px;
