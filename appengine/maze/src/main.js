@@ -1041,6 +1041,7 @@ function execute() {
     stepSpeed = 100;
     log.push(['finish', null]);
   } else {
+    setTimeout(BlocklyCode.FailCode, 1000);
     stepSpeed = 150;
   }
 
@@ -1061,7 +1062,6 @@ function animate() {
     return;
   }
   BlocklyCode.highlight(action[1]);
-
   switch (action[0]) {
     case 'north':
       schedule([pegmanX, pegmanY, pegmanD * 4],
@@ -1098,7 +1098,7 @@ function animate() {
     case 'fail_forward':
       scheduleFail(true);
       BlocklyInterface.saveToLocalStorage();
-      setTimeout(BlocklyCode.FailCode, 1000);
+      // setTimeout(BlocklyCode.FailCode, 1000);
       // break;
     case 'fail_backward':
       scheduleFail(false);
